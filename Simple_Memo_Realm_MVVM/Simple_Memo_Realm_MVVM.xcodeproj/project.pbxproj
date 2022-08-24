@@ -14,6 +14,11 @@
 		86C4119728B65BD80055AF63 /* Simple_Memo_Realm_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4119628B65BD80055AF63 /* Simple_Memo_Realm_MVVMTests.swift */; };
 		86C411A128B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C411A028B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITests.swift */; };
 		86C411A328B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C411A228B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITestsLaunchTests.swift */; };
+		86C411B328B65CB50055AF63 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C411B228B65CB50055AF63 /* Data.swift */; };
+		86C411B528B65CD40055AF63 /* MemoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C411B428B65CD40055AF63 /* MemoEditor.swift */; };
+		86C411B728B65CE80055AF63 /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C411B628B65CE80055AF63 /* MemoDetailView.swift */; };
+		86C411B928B65CFE0055AF63 /* MemoThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C411B828B65CFE0055AF63 /* MemoThumbnailView.swift */; };
+		86C411BB28B65D0B0055AF63 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C411BA28B65D0B0055AF63 /* MemoViewModel.swift */; };
 		E05FC6EF7B8F555FA9A8204A /* Pods_Simple_Memo_Realm_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85B84158176DA77F47CB0D9 /* Pods_Simple_Memo_Realm_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +50,11 @@
 		86C4119C28B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Simple_Memo_Realm_MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C411A028B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Memo_Realm_MVVMUITests.swift; sourceTree = "<group>"; };
 		86C411A228B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Memo_Realm_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86C411B228B65CB50055AF63 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		86C411B428B65CD40055AF63 /* MemoEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditor.swift; sourceTree = "<group>"; };
+		86C411B628B65CE80055AF63 /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
+		86C411B828B65CFE0055AF63 /* MemoThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoThumbnailView.swift; sourceTree = "<group>"; };
+		86C411BA28B65D0B0055AF63 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		C85B84158176DA77F47CB0D9 /* Pods_Simple_Memo_Realm_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Memo_Realm_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F459A2F547372BF42685E7BC /* Pods-Simple_Memo_Realm_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple_Memo_Realm_MVVM.release.xcconfig"; path = "Target Support Files/Pods-Simple_Memo_Realm_MVVM/Pods-Simple_Memo_Realm_MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		F51234A499D08E4B75C7D0DA /* Pods-Simple_Memo_Realm_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple_Memo_Realm_MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Simple_Memo_Realm_MVVM/Pods-Simple_Memo_Realm_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +166,7 @@
 		86C411AF28B65C6B0055AF63 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				86C411BA28B65D0B0055AF63 /* MemoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				86C4118728B65BD60055AF63 /* ContentView.swift */,
+				86C411B428B65CD40055AF63 /* MemoEditor.swift */,
+				86C411B628B65CE80055AF63 /* MemoDetailView.swift */,
+				86C411B828B65CFE0055AF63 /* MemoThumbnailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +185,7 @@
 		86C411B128B65C790055AF63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86C411B228B65CB50055AF63 /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,8 +364,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C411B528B65CD40055AF63 /* MemoEditor.swift in Sources */,
+				86C411BB28B65D0B0055AF63 /* MemoViewModel.swift in Sources */,
 				86C4118828B65BD60055AF63 /* ContentView.swift in Sources */,
+				86C411B328B65CB50055AF63 /* Data.swift in Sources */,
+				86C411B728B65CE80055AF63 /* MemoDetailView.swift in Sources */,
 				86C4118628B65BD60055AF63 /* Simple_Memo_Realm_MVVMApp.swift in Sources */,
+				86C411B928B65CFE0055AF63 /* MemoThumbnailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -491,7 +511,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
