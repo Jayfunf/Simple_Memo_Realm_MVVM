@@ -11,7 +11,7 @@ import SwiftUI
 struct Simple_Memo_Realm_MVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(memoVM: MemoViewModel())
         }
     }
 }
