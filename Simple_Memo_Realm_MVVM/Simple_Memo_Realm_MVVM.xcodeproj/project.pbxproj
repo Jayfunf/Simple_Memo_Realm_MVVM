@@ -82,7 +82,6 @@
 				F51234A499D08E4B75C7D0DA /* Pods-Simple_Memo_Realm_MVVM.debug.xcconfig */,
 				F459A2F547372BF42685E7BC /* Pods-Simple_Memo_Realm_MVVM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,8 +118,10 @@
 		86C4118428B65BD60055AF63 /* Simple_Memo_Realm_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				86C411B128B65C790055AF63 /* Model */,
+				86C411B028B65C740055AF63 /* View */,
+				86C411AF28B65C6B0055AF63 /* ViewModel */,
 				86C4118528B65BD60055AF63 /* Simple_Memo_Realm_MVVMApp.swift */,
-				86C4118728B65BD60055AF63 /* ContentView.swift */,
 				86C4118928B65BD80055AF63 /* Assets.xcassets */,
 				86C4118B28B65BD80055AF63 /* Preview Content */,
 			);
@@ -150,6 +151,28 @@
 				86C411A228B65BD90055AF63 /* Simple_Memo_Realm_MVVMUITestsLaunchTests.swift */,
 			);
 			path = Simple_Memo_Realm_MVVMUITests;
+			sourceTree = "<group>";
+		};
+		86C411AF28B65C6B0055AF63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		86C411B028B65C740055AF63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86C4118728B65BD60055AF63 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86C411B128B65C790055AF63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
