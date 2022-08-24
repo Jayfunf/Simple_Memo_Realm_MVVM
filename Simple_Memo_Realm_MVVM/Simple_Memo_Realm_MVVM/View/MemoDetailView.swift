@@ -11,25 +11,27 @@ struct MemoDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var delCheck:Bool = false
     
-    var prdTitle: String = ""
-    var prdText: String = ""
+//    asyncAfter을 사용하지 않으려면 사용
+//    var prdTitle: String = ""
+//    var prdText: String = ""
     
     var prdData: Memo
     
     init(_ prdData: Memo){
         self.prdData = prdData
-        self.prdTitle = prdData.title
-        self.prdText = prdData.text
+//        asyncAfter을 사용하지 않으려면 사용
+//        self.prdTitle = prdData.title
+//        self.prdText = prdData.text
     }
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(prdTitle)
+            Text(prdData.title)
                 .font(.system(size: 35))
                 .bold()
             Divider()
             ScrollView {
-                Text(prdText)
+                Text(prdData.text)
                     .frame(width: 330, height: .infinity, alignment: .leading)
             }
         }
@@ -54,10 +56,11 @@ struct MemoDetailView: View {
         .alert("정말 삭제 하시겠습니까?",isPresented: $delCheck) {
             Button("확인", role: .destructive){
                 self.presentationMode.wrappedValue.dismiss()
-//                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5 ) {
-//                    Memo.delMemo(prdData)
-//                }
-                Memo.delMemo(prdData)
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5 ) {
+                    Memo.delMemo(prdData)
+                }
+//                asyncAfter을 사용하지 않으려면 사용
+//                Memo.delMemo(prdData)
             }
             Button("아니요", role: .cancel) {}
         }
