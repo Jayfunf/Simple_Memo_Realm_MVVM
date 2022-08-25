@@ -6,11 +6,11 @@ pod파일의 크기가 매우 큰 관계로 pod파일은 레포에 포함되어 
 
 https://velog.io/@simh3077/realm%EC%9C%BC%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%A9%94%EB%AA%A8%EC%9E%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
 
-## 💻 Tech Stack
+## 💻 Tech Stacks
 - Swift
 - SwiftUI
 - Realm
 - MVVM
-## 📱 Device
+## 📱 Devices
 - M1 MacBook Air
 - iOS 15.0 iPhone 12 mini Simulator
